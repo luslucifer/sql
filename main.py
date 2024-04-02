@@ -98,6 +98,7 @@ if __name__ == '__main__':
     with open('ids.txt','r') as file:
         ids_arr = file.read().splitlines()
     
+    ids_arr = ids_arr[0:150]
     
     try :
         with Pool(20) as p :
